@@ -1,3 +1,7 @@
+This is a fork of https://github.com/whois-api-llc/php-simple-geoip using Nesbot/Carbon with version 2+.
+As this specific version of Carbon needs php version 7.1.8+,
+if you are using an older version of php do not use this fork
+
 # php-simple-geoip
 
 *The simplest possible way to get IP geolocation information in PHP.*
@@ -30,8 +34,6 @@ require_once __DIR__ . "/vendor/autoload.php";
 
 ### Supported PHP versions:
 
-* PHP 5.6.x
-* PHP 7.0.x
 * PHP 7.1.x
 * PHP 7.2.x
 
