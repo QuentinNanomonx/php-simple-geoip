@@ -1,32 +1,36 @@
 {
-  "name": "whois-api/simple-geoip",
-  "version": "1.0.0",
-  "description": "The simplest possible way to get IP geolocation information.",
-  "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Whois XML API, Inc.",
-      "homepage": "https://geoipify.whoisxmlapi.com/",
-      "role": "Developer"
+    "name": "nanomonx/simple-geoip",
+    "version": "1.1.0",
+    "description": "The simplest possible way to get IP geolocation information. Adapt whois-api/simple-geoip to makes it working with php8 and symfony 5.*",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Whois XML API, Inc.",
+            "homepage": "https://geoipify.whoisxmlapi.com/",
+            "role": "Developer"
+        },
+        {
+            "name": "Quentin Debest",
+            "email": "quentin.debest@nanomonx.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7",
+        "nesbot/carbon": "^2",
+        "php": ">= 8",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "phpunit/php-code-coverage": "^9.2.6"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --testdox tests"
+    },
+    "autoload": {
+        "psr-4": {
+            "WhoisApi\\SimpleGeoip\\": "src/"
+        }
     }
-  ],
-  "require": {
-    "guzzlehttp/guzzle": "~6.0",
-    "nesbot/carbon": "^2.0.0",
-    "php": ">=7.1.8",
-    "ext-json": "*"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^7",
-    "phpunit/php-code-coverage": "^6.0"
-  },
-  "scripts": {
-    "test": "./vendor/bin/phpunit --testdox tests"
-  },
-  "autoload": {
-    "psr-4": {
-      "WhoisApi\\SimpleGeoip\\": "src/"
-    }
-  }
 }

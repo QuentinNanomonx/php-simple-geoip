@@ -41,7 +41,7 @@ EOT;
             ->getMock();
 
         $stream->method('close')
-            ->willReturn('');
+            ->willReturnSelf();
         $stream->method('__toString')
             ->willReturn($this->sampleJson);
 
@@ -59,7 +59,7 @@ EOT;
         $response->method('hasHeader')
             ->willReturn(false);
         $response->method('getHeader')
-            ->willReturn('');
+            ->willReturn([]);
 
         /**
          * @var GuzzleHttp\ClientInterface|\PHPUnit\Framework\MockObject\MockObject $request
@@ -95,11 +95,11 @@ EOT;
         $response->method('getReasonPhrase')
             ->willReturn('');
         $response->method('getBody')
-            ->willReturn($this->sampleJson);
+            ->willReturnReference($this->sampleJson);
         $response->method('hasHeader')
             ->willReturn(false);
         $response->method('getHeader')
-            ->willReturn('');
+            ->willReturn([]);
 
         /**
          * @var GuzzleHttp\ClientInterface|\PHPUnit\Framework\MockObject\MockObject $request
@@ -133,11 +133,11 @@ EOT;
         $response->method('getReasonPhrase')
             ->willReturn('');
         $response->method('getBody')
-            ->willReturn($this->sampleJson);
+            ->willReturnReference($this->sampleJson);
         $response->method('hasHeader')
             ->willReturn(false);
         $response->method('getHeader')
-            ->willReturn('');
+            ->willReturn([]);
 
         /**
          * @var GuzzleHttp\ClientInterface|\PHPUnit\Framework\MockObject\MockObject $request
@@ -171,11 +171,11 @@ EOT;
         $response->method('getReasonPhrase')
             ->willReturn('');
         $response->method('getBody')
-            ->willReturn($this->sampleJson);
+            ->willReturnReference($this->sampleJson);
         $response->method('hasHeader')
             ->willReturn(false);
         $response->method('getHeader')
-            ->willReturn('');
+            ->willReturn([]);
 
         /**
          * @var GuzzleHttp\ClientInterface|\PHPUnit\Framework\MockObject\MockObject $request
@@ -209,11 +209,11 @@ EOT;
         $response->method('getReasonPhrase')
             ->willReturn('');
         $response->method('getBody')
-            ->willReturn($this->sampleJson);
+            ->willReturnReference($this->sampleJson);
         $response->method('hasHeader')
             ->willReturn(false);
         $response->method('getHeader')
-            ->willReturn('');
+            ->willReturn([]);
 
         /**
          * @var GuzzleHttp\ClientInterface|\PHPUnit\Framework\MockObject\MockObject $request
@@ -247,11 +247,11 @@ EOT;
         $response->method('getReasonPhrase')
             ->willReturn('');
         $response->method('getBody')
-            ->willReturn($this->sampleJson);
+            ->willReturnReference($this->sampleJson);
         $response->method('hasHeader')
             ->willReturn(false);
         $response->method('getHeader')
-            ->willReturn('');
+            ->willReturn([]);
 
         /**
          * @var GuzzleHttp\ClientInterface|\PHPUnit\Framework\MockObject\MockObject $request
@@ -285,11 +285,11 @@ EOT;
         $response->method('getReasonPhrase')
             ->willReturn('');
         $response->method('getBody')
-            ->willReturn($this->sampleJson);
+            ->willReturnReference($this->sampleJson);
         $response->method('hasHeader')
             ->willReturn(false);
         $response->method('getHeader')
-            ->willReturn('');
+            ->willReturn([]);
 
         /**
          * @var GuzzleHttp\ClientInterface|\PHPUnit\Framework\MockObject\MockObject $request

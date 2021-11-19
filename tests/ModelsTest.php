@@ -47,7 +47,7 @@ EOT;
     /**
      *
      */
-    public function setUp()
+    public function setUp() : void
     {
         $this->sampleData = json_decode($this->sampleJson, true);
 
