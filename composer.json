@@ -1,6 +1,6 @@
 {
     "name": "nanomonx/simple-geoip",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "The simplest possible way to get IP geolocation information. Adapt whois-api/simple-geoip to makes it working with php8 and symfony 5.*",
     "type": "library",
     "license": "MIT",

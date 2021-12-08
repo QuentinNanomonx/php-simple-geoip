@@ -14,7 +14,7 @@ use WhoisApi\SimpleGeoip\Models\Response;
 /**
  * Class BuilderTest
  */
-class BuilderTest extends TestCase
+class BuildersTest extends TestCase
 {
     /**
      * @var string
